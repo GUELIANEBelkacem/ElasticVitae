@@ -6,6 +6,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+import org.springframework.util.CollectionUtils;
+
 import com.elasticvitae.base.log.Logger;
 
 /**
@@ -32,9 +34,20 @@ public class CVParser {
 			if(CVParser.isValidURL(source)) text = Arrays.asList((PDFParser.readOnline(source).split("\r\n") ));
 			else text = Arrays.asList((PDFParser.readLocal(source).split("\r\n") ));
 		}
+		else {
+			throw new Exception("Source not a pdf not word\n");
+		}
 		}
 		}catch(Exception e) {
 			Logger.error("Error while parsing file: "+source+"\n"+e.getMessage());
+		}
+		if(!CollectionUtils.isEmpty(text)) {
+			List<String> done = new ArrayList<String>();
+			for(String s:text) {
+				Collections.addAll(done, s.split(" "));
+				
+			}
+			return done;
 		}
 		return text;
 	}
