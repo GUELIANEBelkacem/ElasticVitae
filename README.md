@@ -21,6 +21,7 @@ java -jar ./base-0.0.1-SNAPSHOT.jar
 \*\*
 
 Test using any http client (ex [Postman](https://www.postman.com/downloads/))
+The App will run by default on localhost:8080, Elasticsearch on localhost:9200, Kibana on localhost:5601, and Logstash runs on localhost:9600 (and listens on localhost:8089)
 
 # Features
 
