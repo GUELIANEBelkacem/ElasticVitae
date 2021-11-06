@@ -6,7 +6,7 @@ A Hiring Master App based on Elasticsearch
 
 The App requires [Elasticsearch](https://www.elastic.co/fr/downloads/elasticsearch) and [Logstash](https://www.elastic.co/fr/downloads/logstash) as well as [Kibana](https://www.elastic.co/fr/downloads/kibana) (Optional for visualizing data)
 
-To makes things simpler, you can simply run them on Docker using the provided config file, run the following command and make sure that you are in the **/docker** directory, also check the presence of the **/docker/logstash/logstash.conf**
+To makes things simpler, you can run them on Docker using the provided config file, run the following command and make sure that you are in the **/ElasticVitae** directory, also check the presence of the **/ElasticVitae/logstash/logstash.conf**
 
 ```
 docker-compose up -d
