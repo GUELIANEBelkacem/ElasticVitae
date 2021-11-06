@@ -42,9 +42,11 @@ The API can be broken down as such:
   "name": "Belkacem GUELIANE",
   "email": "mohamed.gueliane@gmail.com",
   "phone": "0753556764",
-  "cvsource": "https://cv-example-website/belkacems-cv.pdf"
+  "cvsource": "changeme!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 }
 ```
+**don't forget to change the cvsource in the body**
+
 
 - **Gat ALL Profiles (GET)**
 
