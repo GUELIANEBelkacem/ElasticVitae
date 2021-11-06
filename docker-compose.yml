@@ -1,0 +1,54 @@
+version: "3"
+services:
+    elasticsearch:
+        image: elasticsearch:7.7.0
+        container_name: elasticsearch
+        hostname: elasticsearch
+        environment:
+            - "discovery.type=single-node"
+            - cluster.routing.allocation.disk.threshold_enabled=false
+        ports:
+            - 9200:9200
+            - 9300:9300
+        networks:
+            - elknetwork
+        volumes:
+          - data011:/usr/share/elasticsearch/data/v
+    kibana:
+        image: kibana:7.7.0
+        container_name: kibana
+        hostname: kibana
+        ports:
+            - 5601:5601
+        links:
+            - elasticsearch:elasticsearch
+        depends_on:
+          - elasticsearch
+        networks:
+          - elknetwork
+        volumes:
+          - data021:/usr/share/elasticsearch/data/v
+    logstash:
+        image: logstash:7.7.0
+        container_name: logstash
+        hostname: logstash
+        ports:
+            - 9600:9600
+            - 8089:8089
+        volumes:
+          - .\logstash:/usr/share/logstash/pipeline/
+        links:
+            - elasticsearch:elasticsearch
+        depends_on:
+          - elasticsearch
+        networks:
+          - elknetwork
+volumes:
+  data011:
+    driver: local
+  data021:
+    driver: local
+    
+networks:
+    elknetwork:
+        driver: bridge
