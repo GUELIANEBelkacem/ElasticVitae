@@ -1,5 +1,5 @@
 # ElatsicVitae
-
+# BY GUELIANE Belkacem AND LEE Jae-Soo
 A Hiring Master App based on Elasticsearch
 
 # Getting started
