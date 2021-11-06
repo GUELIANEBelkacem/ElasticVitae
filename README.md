@@ -15,7 +15,7 @@ docker-compose up -d
 Next, you'll need to start the Maven/SpringBoot backend by running the following in the **clean** directory
 
 ```
-java -jar .\base-0.0.1-SNAPSHOT.jar
+java -jar ./base-0.0.1-SNAPSHOT.jar
 ```
 
 \*\*
