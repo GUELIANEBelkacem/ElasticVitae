@@ -47,12 +47,12 @@ The API can be broken down as such:
 ```
 **WARNING!!!!!!!!!!!**\
 **don't forget to change the cvsource in the body**\
-**you cannot create multiple profiles with the same email!!!** \
+**you cannot create multiple profiles with the same email!!!** 
 
 
 
 
-\
+
 \
 
 
