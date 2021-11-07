@@ -45,13 +45,13 @@ The API can be broken down as such:
   "cvsource": "changeme!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 }
 ```
-**WARNING!!!!!!!!!!!**\n
-**don't forget to change the cvsource in the body**\n
+**WARNING!!!!!!!!!!!**(space, space, Enter)
+**don't forget to change the cvsource in the body**(space, space, Enter)
 **you cannot create multiple profiles with the same email!!!** 
 
 
-\n\n\n
-
+(space, space, Enter)
+(space, space, Enter)
 
 
 
